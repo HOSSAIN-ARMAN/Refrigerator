@@ -62,8 +62,8 @@ namespace RefrigeratorAppPractice3
         }
         public double GetRemainingWeight()
         {
-            double remainingWeight = this.maximumWeight - this.GetCurrentWeight();
-            return remainingWeight;
+            this.maximumWeight = this.maximumWeight - this.GetCurrentWeight();
+            return this.maximumWeight;
         }
 
 
